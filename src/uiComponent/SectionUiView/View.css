@@ -1,0 +1,27 @@
+.ui-image {
+  width: 50%;
+  height: 60%;
+  object-fit: fill;
+}
+.margin-top {
+  margin-top: 5%;
+}
+.font-size-xx-large {
+  font-size: xx-large;
+}
+.font-size-extra-large {
+  font-size: xxx-large;
+}
+.ui-btn-hover:hover {
+  transition: all 0.5s linear;
+  border: 1px solid #222;
+  color: #fff;
+  border:none;
+}
+.ui-btn-hover {
+  background-color: white;
+  color: #fff;
+}
+.text-decoration{
+    text-decoration: underline;
+}
