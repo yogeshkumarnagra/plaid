@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import uiImage from "../../../images/uiImage.jpg";
+// import uiImage from "../../../images/uiImage.jpg";
 import "./Hero.css";
 import { data } from "../../../utils";
 
@@ -12,7 +12,7 @@ export function Hero() {
   return (
     <>
       <div className="middle-section d-flex">
-        <img className="ui-image margin-top" src={uiImage} alt="ui_image" />
+        <img className="ui-image margin-top" src={"/images/uiImage.jpg"} alt="ui_image" />
         <div className="d-flex-column justify-center align-center">
           <div>
             <h3 className="font-size-xx-large">The Safer way for people</h3>

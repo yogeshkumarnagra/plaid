@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import main_logo from "../../../images/main_logo.svg";
+// import main_logo from "../../../images/main_logo.svg";
 import "./Header.css";
 import { NavDetailSheet } from "./NavDetailSheet";
 import { data } from "../../../utils";
@@ -31,7 +31,7 @@ export function Header() {
     <div className="navbar">
       <div className="d-flex p-1 justify-between">
         <div className="main-logo-wrapper d-flex justify-around align-center w-12">
-          <img src={main_logo} className="main-logo-img" alt="plaid-logo" />
+          <img src={"/images/main_logo.svg"} className="main-logo-img" alt="plaid-logo" />
         </div>
         <div className="d-flex  justify-around p-1 width-50">
           {headerFields &&
