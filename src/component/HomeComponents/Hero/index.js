@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import uiImage from "../../image/uiImage.jpg";
-import "./View.css";
-import { handleHoverEffect } from "../../utils/RandomColor.js";
+import uiImage from "../../../images/uiImage.jpg";
+import "./Hero.css";
+import { data } from "../../../utils";
 
-function View() {
+export function Hero() {
   const [colorstate, setColorstate] = useState("#222");
+  const handleHoverEffect = data.handleHoverEffect;
 
   useEffect(() => {}, []);
   console.log(colorstate);
@@ -28,12 +29,14 @@ function View() {
                 Get Api Keys <i className="angle right icon"></i>
               </button>
               <div className="d-flex-column">
-                <p className="m-bottom-1">Start building with Plaid's APIs for free.</p>
+                <p className="m-bottom-1">
+                  Start building with Plaid's APIs for free.
+                </p>
                 <div className="d-flex justify-between">
                   <div className="font-weight-700">Questions?</div>
-                <div className="text-decoration font-weight-700">
-                  Contact our sales team
-                </div>
+                  <div className="text-decoration font-weight-700">
+                    Contact our sales team
+                  </div>
                 </div>
               </div>
             </div>
@@ -43,5 +46,3 @@ function View() {
     </>
   );
 }
-
-export default View;
