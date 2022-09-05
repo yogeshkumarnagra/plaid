@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./NavDetailSheet.css";
 
-export const NavDetailSheet = ({ topicProps, childern }) => {
+export const NavDetailSheet = ({ topicProps, children }) => {
   const [openDetail, setOpenDetail] = useState(false);
   const { topicHover, topic } = topicProps;
   useEffect(() => {
@@ -10,15 +10,14 @@ export const NavDetailSheet = ({ topicProps, childern }) => {
       console.log("if", topicProps);
     }
   }, [openDetail]);
-  console.log("NavDetails", topicProps.topic);
   return (
     <>
       <div
-        className={`nav-detail-sheet w-100 absolute ${
-          openDetail ? "d-block" : ""
+        className={`nav-detail-sheet  justify-center w-100 absolute ${
+          openDetail ? "d-flex" : ""
         }`}
       >
-        {childern}
+        {children}
       </div>
     </>
   );

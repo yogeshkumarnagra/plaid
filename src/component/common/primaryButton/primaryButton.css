@@ -1,0 +1,10 @@
+.primaryButton {
+    background-color: #222;
+    color: #fff;
+    width: 100px;
+}
+
+.secButton {
+    border: 1 px solid #222;
+    color: #222;
+}

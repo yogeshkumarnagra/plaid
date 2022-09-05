@@ -9,5 +9,5 @@
 }
 
 .nav-detail-sheet:hover {
-    display: block;
+    display: flex;
 }
